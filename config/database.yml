@@ -1,0 +1,25 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: beetroot_development
+  pool: 5
+  username: synthmax
+  password:
+
+test: &test
+  adapter: postgresql
+  encoding: unicode
+  database: beetroot_test
+  pool: 5
+  username: synthmax
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: beetroot
+  pool: 5
+  username: synthmax
+  password: synthmax
+cucumber:
+  <<: *test
